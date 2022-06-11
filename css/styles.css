@@ -1,0 +1,120 @@
+@font-face {
+    font-family: "Roboto Cond Bold";
+    src: url(./fonts/RobotoCondensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Cond Light";
+    src: url(./fonts/RobotoCondensed-Light.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Cond Regular";
+    src: url(./fonts/RobotoCondensed-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Cond Light', sans-serif;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #26006E;
+    border-radius: 10px;
+}
+
+header {
+    margin-left: 60px;
+}
+
+header h1 {
+    width: 100%;
+    font-size: 25px;
+    letter-spacing: 15px;
+}
+
+#title-rock {
+    color: #FE2BF1;
+}
+
+#title-paper {
+    color: #00DFBA;
+}
+
+#title-scissors {
+    color: #0C7CEB;
+}
+
+.player-selection {
+    width: 100vw;
+    margin: 30px 0;
+}
+
+img {
+    cursor: pointer;
+    height: 208px;
+    margin: 40px;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+#rock {
+    height: 150px;
+}
+
+#scissors {
+    width: 150px;
+}
+
+#intro-final-result {
+    font-size: 18px;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+
+#round-result {
+    font-family: 'Robot Cond Regular', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.score {
+    font-size: 16px;
+    margin: 30px 0;
+}
+
+#player-score:after {
+    content: "";
+    display: block;
+    width: 100px;
+    border-bottom: 1px solid #fff;
+    margin: 8px auto;
+}
+
+#reset {
+    font-size: 14px;
+    margin: 30px 0 0;
+    cursor: pointer;
+}
+
+#reset:hover {
+    text-decoration: underline;
+}
